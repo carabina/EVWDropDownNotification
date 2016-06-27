@@ -6,7 +6,7 @@
 
 ## Example
 
-![Example 1](https://raw.githubusercontent.com/cre8it/EVWDropDownNotification/edit/master/Screenshots/EVWDropdownNotification.gif)
+![Example 1](https://github.com/cre8it/EVWDropDownNotification/blob/master/Screenshots/EVWDropdownNotification.gif)
 
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
