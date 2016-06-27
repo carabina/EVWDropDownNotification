@@ -1,6 +1,5 @@
 # EVWDropDownNotification
 
-[![CI Status](http://img.shields.io/travis/CRE8IT GmbH/EVWDropDownNotification.svg?style=flat)](https://travis-ci.org/CRE8IT GmbH/EVWDropDownNotification)
 [![Version](https://img.shields.io/cocoapods/v/EVWDropDownNotification.svg?style=flat)](http://cocoapods.org/pods/EVWDropDownNotification)
 [![License](https://img.shields.io/cocoapods/l/EVWDropDownNotification.svg?style=flat)](http://cocoapods.org/pods/EVWDropDownNotification)
 [![Platform](https://img.shields.io/cocoapods/p/EVWDropDownNotification.svg?style=flat)](http://cocoapods.org/pods/EVWDropDownNotification)
