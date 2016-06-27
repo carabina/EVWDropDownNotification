@@ -6,6 +6,9 @@
 
 ## Example
 
+![Example 1](https://raw.githubusercontent.com/cre8it/EVWDropDownNotification/edit/master/Screenshots/EVWDropdownNotification.gif)
+
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
