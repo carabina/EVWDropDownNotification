@@ -55,7 +55,7 @@ let notification = EVWDropDownNotification()
 ...
 ```
 
-Imnplement the 3 Delegate Methods:
+Implement the 3 Delegate Methods:
 
 ```swift
 class ViewController: UIViewController, EVWDropDownNotificationDelegate {
@@ -95,9 +95,9 @@ In your ViewDidLoad set the Properties for the Notification (see below for all a
 
 ## Properties 
 
-# Required
+### Required
 
-# Optional
+### Optional
 
 
 
