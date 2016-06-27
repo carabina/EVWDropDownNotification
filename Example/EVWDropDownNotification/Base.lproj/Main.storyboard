@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="EVWDropDownNotification_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +17,81 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMn-Km-ObO">
+                                <rect key="frame" x="20" y="125" width="560" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.14861918604651161" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Only Top Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onlyTop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UOf-Vw-JPV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fau-I9-Mco">
+                                <rect key="frame" x="20" y="163" width="560" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.14861918599999999" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Only Bottom Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onlyBottom:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0S3-S0-Dvn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTC-aE-n9d">
+                                <rect key="frame" x="20" y="201" width="560" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.14861918599999999" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Both Buttons">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="bothButtons:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OxD-yf-xFu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wE-yJ-Wsa">
+                                <rect key="frame" x="20" y="239" width="560" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.14861918599999999" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Dismiss On Tap">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissOnTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IPm-PN-Z67"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2Q-Nq-805">
+                                <rect key="frame" x="20" y="277" width="560" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.14861918599999999" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Vertical Alignment: Top">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="verticalTop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CVO-FT-NMb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.027450980390000001" green="0.23529411759999999" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="iMn-Km-ObO" secondAttribute="leading" id="20k-5D-JZ6"/>
+                            <constraint firstItem="Fau-I9-Mco" firstAttribute="trailing" secondItem="iMn-Km-ObO" secondAttribute="trailing" id="6Wa-Or-IlK"/>
+                            <constraint firstItem="1wE-yJ-Wsa" firstAttribute="leading" secondItem="PTC-aE-n9d" secondAttribute="leading" id="9oi-0N-dDm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iMn-Km-ObO" secondAttribute="trailing" id="EzD-Zd-1Db"/>
+                            <constraint firstItem="1wE-yJ-Wsa" firstAttribute="trailing" secondItem="PTC-aE-n9d" secondAttribute="trailing" id="QoS-vg-hDH"/>
+                            <constraint firstItem="PTC-aE-n9d" firstAttribute="leading" secondItem="Fau-I9-Mco" secondAttribute="leading" id="RCM-yX-CGm"/>
+                            <constraint firstItem="Fau-I9-Mco" firstAttribute="top" secondItem="iMn-Km-ObO" secondAttribute="bottom" constant="8" id="UQh-nd-Lnz"/>
+                            <constraint firstItem="Fau-I9-Mco" firstAttribute="leading" secondItem="iMn-Km-ObO" secondAttribute="leading" id="Xt6-9W-AWO"/>
+                            <constraint firstItem="S2Q-Nq-805" firstAttribute="trailing" secondItem="1wE-yJ-Wsa" secondAttribute="trailing" id="bSS-gj-5sj"/>
+                            <constraint firstItem="PTC-aE-n9d" firstAttribute="trailing" secondItem="Fau-I9-Mco" secondAttribute="trailing" id="d5z-gq-Ddq"/>
+                            <constraint firstItem="iMn-Km-ObO" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="105" id="dQN-7C-l73"/>
+                            <constraint firstItem="S2Q-Nq-805" firstAttribute="top" secondItem="1wE-yJ-Wsa" secondAttribute="bottom" constant="8" id="h6H-aV-qXk"/>
+                            <constraint firstItem="S2Q-Nq-805" firstAttribute="leading" secondItem="1wE-yJ-Wsa" secondAttribute="leading" id="maT-Kk-9PP"/>
+                            <constraint firstItem="1wE-yJ-Wsa" firstAttribute="top" secondItem="PTC-aE-n9d" secondAttribute="bottom" constant="8" id="pN6-Qu-EDN"/>
+                            <constraint firstItem="PTC-aE-n9d" firstAttribute="top" secondItem="Fau-I9-Mco" secondAttribute="bottom" constant="8" id="ree-m9-6FA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="834" y="527"/>
         </scene>
     </scenes>
 </document>

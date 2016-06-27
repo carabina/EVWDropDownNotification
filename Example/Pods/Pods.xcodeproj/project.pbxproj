@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0EF7E3B3573881C9144D7E74D4465F7E /* Pods-EVWDropDownNotification_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A08D3A48D090B1827AA798D3A81549E /* Pods-EVWDropDownNotification_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DC41F46C130BF1138F6FEF4EAC9B480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		2C8C2E076B6529B0C1DE130D5111CB15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		3304094372DF01CF5B1FA45E06FFCD48 /* EVWDropDownNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 052205CF5B4B5DE3C93F509575F09B8D /* EVWDropDownNotification-dummy.m */; };
+		13D11D8C8272665774ED5EE9404CF245 /* EVWDropDownNotification-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 052205CF5B4B5DE3C93F509575F09B8D /* EVWDropDownNotification-dummy.m */; };
+		1DC41F46C130BF1138F6FEF4EAC9B480 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		320B57879F8F95C2E21E78DAF70BC3DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
 		4DD20B584490916B0D42BF35DA9892CE /* Pods-EVWDropDownNotification_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 860DF94B591C4AE9B79C062AEDDF6434 /* Pods-EVWDropDownNotification_Example-dummy.m */; };
 		62C589A1350B6C41F41B35A2967384FA /* Pods-EVWDropDownNotification_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 556702EC5B4A30F74B003F9258F315BF /* Pods-EVWDropDownNotification_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		651CFB9852D32BCA0A24E5F004D22D0B /* EVWDropDownNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFAADBA6BBB900F967E03185C170B46C /* EVWDropDownNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		841E5A0E996225B86BA113873BA6057C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		841E5A0E996225B86BA113873BA6057C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		9762F4AC23D6C445AAC09B200334B062 /* EVWDropDownNotification-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFAADBA6BBB900F967E03185C170B46C /* EVWDropDownNotification-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABD6A531513F214CA04A42A661C63587 /* EVWDropDownNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84FAF2553C0BC94D0499A170681A1BB /* EVWDropDownNotification.swift */; };
+		B174E3D33970BD21A4732BEBE1C62D05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		B2FC1D4095015BF9E8C8D14F25FE9134 /* Pods-EVWDropDownNotification_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F92AE0C50AD4D3E9B89D81A1A35F41 /* Pods-EVWDropDownNotification_Tests-dummy.m */; };
-		DEED7BAA84F41BB1404D5F34258A0B7A /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868E975D00CBFD224C9DCB66F4587480 /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +25,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0629EB507D90B3C9A8E4FB1B11C46176;
+			remoteGlobalIDString = 52C07C817C165ED4040C15D53867BD61;
 			remoteInfo = EVWDropDownNotification;
 		};
 /* End PBXContainerItemProxy section */
@@ -47,32 +48,25 @@
 		73ABB9577879DF24D793D4D48DBE89B1 /* Pods-EVWDropDownNotification_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EVWDropDownNotification_Tests.modulemap"; sourceTree = "<group>"; };
 		7CE3AA2C435999AD6013024918CE1B64 /* Pods-EVWDropDownNotification_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EVWDropDownNotification_Tests-resources.sh"; sourceTree = "<group>"; };
 		860DF94B591C4AE9B79C062AEDDF6434 /* Pods-EVWDropDownNotification_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EVWDropDownNotification_Example-dummy.m"; sourceTree = "<group>"; };
-		868E975D00CBFD224C9DCB66F4587480 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A417BAE3C2F2A349E8CDFFE299EE61A1 /* Pods-EVWDropDownNotification_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EVWDropDownNotification_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BACA32207A41893529B712CBB1E46529 /* Pods-EVWDropDownNotification_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EVWDropDownNotification_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C214E9D79F1884307277ABC5D31A5448 /* Pods_EVWDropDownNotification_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EVWDropDownNotification_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CB1CE3F169B249AB491BE270BEF098 /* Pods-EVWDropDownNotification_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EVWDropDownNotification_Example.modulemap"; sourceTree = "<group>"; };
 		C8CB1EDA10776D6DB4539DDAA69E62C6 /* Pods-EVWDropDownNotification_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EVWDropDownNotification_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CFB46C99779388B65916BC594BFEEB71 /* EVWDropDownNotification.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EVWDropDownNotification.modulemap; sourceTree = "<group>"; };
 		DB470A2204D81219A9BFA6022E6A1F4F /* Pods-EVWDropDownNotification_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EVWDropDownNotification_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E030C29676C4725076B8FEBE44586CCF /* Pods-EVWDropDownNotification_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EVWDropDownNotification_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EB17827224D7E4BC222E60CD1949E94E /* EVWDropDownNotification-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EVWDropDownNotification-prefix.pch"; sourceTree = "<group>"; };
 		EC7284F10FC6D9B12FABFB4787B67749 /* Pods_EVWDropDownNotification_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EVWDropDownNotification_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84FAF2553C0BC94D0499A170681A1BB /* EVWDropDownNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EVWDropDownNotification.swift; sourceTree = "<group>"; };
 		FAB7349DB45CE922A9C391FC834E9C21 /* Pods-EVWDropDownNotification_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EVWDropDownNotification_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		FFAADBA6BBB900F967E03185C170B46C /* EVWDropDownNotification-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EVWDropDownNotification-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		23FA87C62E36DC5B823B7B0ADF6DDB3B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C8C2E076B6529B0C1DE130D5111CB15 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7DB8FC6B7D30A91CA08A4DA2692BF82A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,17 +83,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAADAA471B172F01774E737DE72186B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B174E3D33970BD21A4732BEBE1C62D05 /* Foundation.framework in Frameworks */,
+				320B57879F8F95C2E21E78DAF70BC3DA /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B511925E8E549991EA92CD7962FC67E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				868E975D00CBFD224C9DCB66F4587480 /* ReplaceMe.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		33A032CBCA1BF78C790880BBDFF85009 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,12 +104,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		71C68A797BC87DD79EE3A5033508413A /* Pods-EVWDropDownNotification_Tests */ = {
@@ -140,7 +135,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				AD19DA31F70A6CD1C5DFCD46EA1B1E78 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				AA57CDF44F296C4B2C4531236D95D964 /* Products */,
 				33A032CBCA1BF78C790880BBDFF85009 /* Targets Support Files */,
 			);
@@ -164,14 +159,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D39C7645D864D350500C412F83C4E6E1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +171,14 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/EVWDropDownNotification";
+			sourceTree = "<group>";
+		};
+		E58C8B231DFC3BA20EFD47427BAF3268 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F84FAF2553C0BC94D0499A170681A1BB /* EVWDropDownNotification.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		E99C3255B899A2DEA829B31E9170073E /* Pods-EVWDropDownNotification_Example */ = {
@@ -207,9 +202,18 @@
 		EDAAE8508CA02CEF47CB4AC3F1180401 /* EVWDropDownNotification */ = {
 			isa = PBXGroup;
 			children = (
-				1B511925E8E549991EA92CD7962FC67E /* Classes */,
+				E58C8B231DFC3BA20EFD47427BAF3268 /* Classes */,
 			);
 			path = EVWDropDownNotification;
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		F383F279DEFF26EB4E0E1949655F208D /* EVWDropDownNotification */ = {
@@ -225,19 +229,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		75403973160166FC407362BF134C74C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9762F4AC23D6C445AAC09B200334B062 /* EVWDropDownNotification-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A06B0D6D0D17AF7FDF0A8EEFF40338F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				62C589A1350B6C41F41B35A2967384FA /* Pods-EVWDropDownNotification_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD56636E7907A3BB1192699A701E6BB4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				651CFB9852D32BCA0A24E5F004D22D0B /* EVWDropDownNotification-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +256,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0629EB507D90B3C9A8E4FB1B11C46176 /* EVWDropDownNotification */ = {
+		52C07C817C165ED4040C15D53867BD61 /* EVWDropDownNotification */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B51B6607CA312D9D78EDEB9AAAB1030 /* Build configuration list for PBXNativeTarget "EVWDropDownNotification" */;
+			buildConfigurationList = DF943C01E25E9045C835A6C8F86106F4 /* Build configuration list for PBXNativeTarget "EVWDropDownNotification" */;
 			buildPhases = (
-				820D9EF9163E5BAA6B9E15C2B736CDB6 /* Sources */,
-				23FA87C62E36DC5B823B7B0ADF6DDB3B /* Frameworks */,
-				CD56636E7907A3BB1192699A701E6BB4 /* Headers */,
+				FA118647A9BAEC0A2CA0A7B8BE21FBA5 /* Sources */,
+				CAADAA471B172F01774E737DE72186B4 /* Frameworks */,
+				75403973160166FC407362BF134C74C7 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -325,7 +329,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0629EB507D90B3C9A8E4FB1B11C46176 /* EVWDropDownNotification */,
+				52C07C817C165ED4040C15D53867BD61 /* EVWDropDownNotification */,
 				E7C82340A87A3F398BE4C9EC20CF7256 /* Pods-EVWDropDownNotification_Example */,
 				E350D601DC614F084E5344933D14CDC1 /* Pods-EVWDropDownNotification_Tests */,
 			);
@@ -333,15 +337,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		820D9EF9163E5BAA6B9E15C2B736CDB6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3304094372DF01CF5B1FA45E06FFCD48 /* EVWDropDownNotification-dummy.m in Sources */,
-				DEED7BAA84F41BB1404D5F34258A0B7A /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E73EB14E22FC4D16E69EFC57711E8FDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,13 +353,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA118647A9BAEC0A2CA0A7B8BE21FBA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13D11D8C8272665774ED5EE9404CF245 /* EVWDropDownNotification-dummy.m in Sources */,
+				ABD6A531513F214CA04A42A661C63587 /* EVWDropDownNotification.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		52CBCECBC5590B3D81811DB36AC5662B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EVWDropDownNotification;
-			target = 0629EB507D90B3C9A8E4FB1B11C46176 /* EVWDropDownNotification */;
+			target = 52C07C817C165ED4040C15D53867BD61 /* EVWDropDownNotification */;
 			targetProxy = 4F1230FEAA0AD98B780C14C7BC23BF3B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -474,35 +478,6 @@
 			};
 			name = Debug;
 		};
-		20570B089F8AF6A1D87CE1DFA4650217 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28FE421EC7591C2C73EA575EE27AC6B1 /* EVWDropDownNotification.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/EVWDropDownNotification/EVWDropDownNotification-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EVWDropDownNotification/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EVWDropDownNotification/EVWDropDownNotification.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = EVWDropDownNotification;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		60101C6B61DEF72176D3795D91D10EEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6211A3B9A29C6A65458AA68F605249EF /* Pods-EVWDropDownNotification_Tests.release.xcconfig */;
@@ -570,13 +545,13 @@
 			};
 			name = Debug;
 		};
-		705C783F0DEC5974C288B2C5326E2669 /* Debug */ = {
+		73D560C205BFA10AA9720F8E8C8814DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28FE421EC7591C2C73EA575EE27AC6B1 /* EVWDropDownNotification.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -589,16 +564,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/EVWDropDownNotification/EVWDropDownNotification.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = EVWDropDownNotification;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -642,18 +616,39 @@
 			};
 			name = Debug;
 		};
+		DB4E81F3B49F14EF4A64FF687B293725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28FE421EC7591C2C73EA575EE27AC6B1 /* EVWDropDownNotification.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EVWDropDownNotification/EVWDropDownNotification-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EVWDropDownNotification/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EVWDropDownNotification/EVWDropDownNotification.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EVWDropDownNotification;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B51B6607CA312D9D78EDEB9AAAB1030 /* Build configuration list for PBXNativeTarget "EVWDropDownNotification" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				705C783F0DEC5974C288B2C5326E2669 /* Debug */,
-				20570B089F8AF6A1D87CE1DFA4650217 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -677,6 +672,15 @@
 			buildConfigurations = (
 				6F5A304124AADAA99760AB90DD4CAE88 /* Debug */,
 				0447AAF371EBC76F1319C2F6F0A0A0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF943C01E25E9045C835A6C8F86106F4 /* Build configuration list for PBXNativeTarget "EVWDropDownNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB4E81F3B49F14EF4A64FF687B293725 /* Debug */,
+				73D560C205BFA10AA9720F8E8C8814DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
