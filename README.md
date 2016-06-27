@@ -58,26 +58,26 @@ let notification = EVWDropDownNotification()
 Implement the 3 Delegate Methods:
 
 ```swift
-class ViewController: UIViewController, EVWDropDownNotificationDelegate {
 
-  func dropdownNotificationBottomButtonTapped() {
-    //Do something
-    ...
-    //Dismiss the notification view
-    notification.dismissWithGravityAnimation(true)
-  }
+func dropdownNotificationBottomButtonTapped() {
+  //Do something
+  ...
+  //Dismiss the notification view
+  notification.dismissWithGravityAnimation(true)
+}
     
-    func dropdownNotificationTopButtonTapped() {
-      //Do something
-      ...
-      //Dismiss the notification view
-      notification.dismissWithGravityAnimation(true)
-    }
+func dropdownNotificationTopButtonTapped() {
+  //Do something
+  ...
+  //Dismiss the notification view
+  notification.dismissWithGravityAnimation(true)
+}
     
-    func dropdownNotificationDismissedWithTap() {
-       //Do something
-       // !!!!! NO NEED TO DISMISS THE NOTIFICATION VIEW !!!!!
-    }
+func dropdownNotificationDismissedWithTap() {
+  //Do something
+  ...
+  // !!!!! NO NEED TO DISMISS THE NOTIFICATION VIEW !!!!!
+}
 ```
 
 In your ViewDidLoad set the Properties for the Notification (see below for all available properties):
@@ -199,7 +199,7 @@ All properties below are optional. !! Note that Buttons will only be displayed i
 
 ## Author
 
-CRE8IT GmbH
+CRE8IT GmbH, Switzerland
 
 ## License
 
