@@ -126,7 +126,7 @@ The only two mandatory properties are the Title and Subtitle of the Notification
 
 ### Optional
 
-All properties below are optional. !! Note that Buttons will only be displayed if the buttonText of provided !!
+All properties below are optional. !! Note that Buttons will only be displayed if the buttonText is provided !!
 
 ```swift
   /*
