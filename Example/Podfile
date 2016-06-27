@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EVWDropDownNotification_Example' do
+  pod 'EVWDropDownNotification', :path => '../'
+
+  target 'EVWDropDownNotification_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
