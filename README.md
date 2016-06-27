@@ -93,13 +93,109 @@ In your ViewDidLoad set the Properties for the Notification (see below for all a
   notification.subtitleText = "Message Here" 
 ```
 
+Once all properties set, call the following function to display the Notfication:
+
+```swift
+ /*
+ * NOTE: always provide the ViewController (self.view.Superview) as first parameter
+ */
+ notification.presentInView(self.view.superview!, withGravityAnimation: true)
+```
+
 ## Properties 
+
+The following public properties are available, please note that some are required and some other are optional because default values have been set: 
 
 ### Required
 
+The only two mandatory properties are the Title and Subtitle of the Notification
+
+```swift
+  /*
+  * Title Attributes
+  */
+  
+  public var titleText:String?
+    
+  /*
+  * Subtitle Attributes
+  */
+  
+  public var subtitleText:String?
+```
+
 ### Optional
 
+All properties below are optional. !! Note that Buttons will only be displayed if the buttonText of provided !!
 
+```swift
+  /*
+  * Padding between elements
+  */
+  
+  public var paddingBetweenElements:CGFloat = 10
+    
+  /*
+  * Background Color If set, it overwrites the blur effect
+  */
+  
+  public var backgroundColor:UIColor?
+    
+  /*
+  * Title Properties
+  */
+  
+  public var titleLabelFontSize:CGFloat = 19
+  public var titleLabelColor:UIColor = UIColor.blackColor()
+    
+  /*
+  * Subtitle Propperties
+  */
+  
+  public var subTitleLabelFontSize:CGFloat = 14
+  public var subTitleLabelColor:UIColor = UIColor.blackColor()
+    
+  /*
+  * General Button Properties
+  */
+  
+  public var buttonFontSize:CGFloat = 13
+  public var buttonCornerRadius:CGFloat = 10
+  public var buttonBorderWidth:CGFloat = 1
+  public var buttonBorderColor:UIColor = UIColor.blackColor()
+  public var buttonWidth:CGFloat = 75
+  public var buttonHeight:CGFloat = 30
+  public var buttonVerticalAligment:ButtonPosition = .Bottom
+    
+  /*
+  * Top Button Properties
+  */
+  
+  public var topButtonTextColor:UIColor = UIColor.blackColor()
+  public var topButtonBackgroundColor:UIColor = UIColor.clearColor()
+    
+    
+  /*
+  * Bottom Button Properties
+  */
+  
+  public var bottomButtonTextColor:UIColor = UIColor.blackColor()
+  public var bottomButtonBackgroundColor:UIColor = UIColor.clearColor()
+    
+  /*
+  * Icon Properties -> Size is squared
+  */
+  
+  public var imageSquaredSize:CGFloat = 40
+  public var image:UIImage?
+    
+    
+  /*
+  * Dismiss On Tap
+  */
+  
+  public var dismissOnTap:Bool = false
+```
 
 ## Author
 
