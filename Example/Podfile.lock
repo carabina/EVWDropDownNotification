@@ -1,0 +1,16 @@
+PODS:
+  - EVWDropDownNotification (0.1.0)
+
+DEPENDENCIES:
+  - EVWDropDownNotification (from `../`)
+
+EXTERNAL SOURCES:
+  EVWDropDownNotification:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EVWDropDownNotification: 116831ea77b31584e45b19b4bb6b40a113d3622d
+
+PODFILE CHECKSUM: 3da91977e4b801dd319f51f2a5128643085aaf0f
+
+COCOAPODS: 1.0.1
