@@ -37,7 +37,7 @@ class ViewController: UIViewController, EVWDropDownNotificationDelegate {
     }
     
     func displayNotification(){
-        notification.presentInView(self.view.superview!, withGravityAnimation: true)
+        notification.presentInView(view: self.view.superview!, withGravityAnimation: true)
     }
     
     // MARK: - Only Bottom Button
@@ -89,12 +89,12 @@ class ViewController: UIViewController, EVWDropDownNotificationDelegate {
     // MARK: - Notification Delegates
     
     func dropdownNotificationBottomButtonTapped() {
-        notification.dismissWithGravityAnimation(true)
+        notification.dismissWithGravityAnimation(animation: true)
         print("Bottom Button Tapped")
     }
     
     func dropdownNotificationTopButtonTapped() {
-        notification.dismissWithGravityAnimation(true)
+        notification.dismissWithGravityAnimation(animation: true)
         print("Top Button Tapped")
     }
     
