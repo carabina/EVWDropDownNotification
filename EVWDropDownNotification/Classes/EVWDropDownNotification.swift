@@ -52,14 +52,14 @@ public class EVWDropDownNotification: NSObject {
      * Title Attributes
      */
     public var titleLabelFontSize:CGFloat = 19
-    public var titleLabelColor:UIColor = UIColor.blackColor()
+    public var titleLabelColor:UIColor = UIColor.black
     public var titleText:String?
     
     /*
      * Subtitle Attributes
      */
     public var subTitleLabelFontSize:CGFloat = 14
-    public var subTitleLabelColor:UIColor = UIColor.blackColor()
+    public var subTitleLabelColor:UIColor = UIColor.black
     public var subtitleText:String?
     
     /*
@@ -68,7 +68,7 @@ public class EVWDropDownNotification: NSObject {
     public var buttonFontSize:CGFloat = 13
     public var buttonCornerRadius:CGFloat = 10
     public var buttonBorderWidth:CGFloat = 1
-    public var buttonBorderColor:UIColor = UIColor.blackColor()
+    public var buttonBorderColor:UIColor = UIColor.black
     public var buttonWidth:CGFloat = 75
     public var buttonHeight:CGFloat = 30
     public var buttonVerticalAligment:ButtonPosition = .Bottom
@@ -77,16 +77,16 @@ public class EVWDropDownNotification: NSObject {
      * Top Button Attributes
      */
     public var topButtonText:String?
-    public var topButtonTextColor:UIColor = UIColor.blackColor()
-    public var topButtonBackgroundColor:UIColor = UIColor.clearColor()
+    public var topButtonTextColor:UIColor = UIColor.black
+    public var topButtonBackgroundColor:UIColor = UIColor.clear
     
     
     /*
      * Bottom Button Attributes
      */
     public var bottomButtonText:String?
-    public var bottomButtonTextColor:UIColor = UIColor.blackColor()
-    public var bottomButtonBackgroundColor:UIColor = UIColor.clearColor()
+    public var bottomButtonTextColor:UIColor = UIColor.black
+    public var bottomButtonBackgroundColor:UIColor = UIColor.clear
     
     /*
      * Icon Attribute -> Size is squared
@@ -122,30 +122,30 @@ public class EVWDropDownNotification: NSObject {
         imageView = UIImageView()
         imageView?.image = nil
         
-        topButton = UIButton(type: .Custom)
+        topButton = UIButton(type: .custom)
         topButton?.titleLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: buttonFontSize)
-        topButton?.setTitleColor(topButtonTextColor, forState: .Normal)
+        topButton?.setTitleColor(topButtonTextColor, for: .normal)
         topButton?.adjustsImageWhenHighlighted = true
         topButton?.backgroundColor = topButtonBackgroundColor
         
         topButton?.layer.cornerRadius = buttonCornerRadius
-        topButton?.layer.borderColor = buttonBorderColor.CGColor
+        topButton?.layer.borderColor = buttonBorderColor.cgColor
         topButton?.layer.borderWidth = buttonBorderWidth
         topButton?.layer.masksToBounds = true
         
         
-        bottomButton = UIButton(type: .Custom)
+        bottomButton = UIButton(type: .custom)
         bottomButton?.titleLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: buttonFontSize)
-        bottomButton?.setTitleColor(bottomButtonTextColor, forState: .Normal)
+        bottomButton?.setTitleColor(bottomButtonTextColor, for: .normal)
         bottomButton?.adjustsImageWhenHighlighted = true
         bottomButton?.backgroundColor = bottomButtonBackgroundColor
         
         bottomButton?.layer.cornerRadius = buttonCornerRadius
-        bottomButton?.layer.borderColor = buttonBorderColor.CGColor
+        bottomButton?.layer.borderColor = buttonBorderColor.cgColor
         bottomButton?.layer.borderWidth = buttonBorderWidth
         bottomButton?.layer.masksToBounds = true
         
-        screenSize = UIScreen.mainScreen().bounds.size
+        screenSize = UIScreen.main.bounds.size
         
     }
     
@@ -158,17 +158,17 @@ public class EVWDropDownNotification: NSObject {
             imageView?.image = image
             titleLabel?.text = titleText
             subTitileLabel?.text = subtitleText
-            topButton?.setTitle(topButtonText, forState: .Normal)
-            bottomButton?.setTitle(bottomButtonText, forState: .Normal)
+            topButton?.setTitle(topButtonText, for: .normal)
+            bottomButton?.setTitle(bottomButtonText, for: .normal)
             
             
             // Calculation
             let textWidth = Int( (screenSize?.width)! - ( 4 * paddingBetweenElements) - imageSquaredSize - buttonWidth)
-            let titleAttr = [NSFontAttributeName:UIFont(name: "HelveticaNeue-Medium", size: titleLabelFontSize)!]
-            let titleHeight = NSString(string: titleLabel!.text!).boundingRectWithSize(CGSize(width: textWidth,height: 999), options: .UsesLineFragmentOrigin, attributes: titleAttr, context: nil).size.height
+            let titleAttr = [NSAttributedString.Key.font:UIFont(name: "HelveticaNeue-Medium", size: titleLabelFontSize)!]
+            let titleHeight = NSString(string: titleLabel!.text!).boundingRect(with: CGSize(width: textWidth,height: 999), options: .usesLineFragmentOrigin, attributes: titleAttr, context: nil).size.height
             
-            let subtitleAttr = [NSFontAttributeName:UIFont(name: "HelveticaNeue", size: subTitleLabelFontSize)!]
-            let subtitleHeight = NSString(string: subTitileLabel!.text!).boundingRectWithSize(CGSize(width: textWidth,height: 999), options: .UsesLineFragmentOrigin, attributes: subtitleAttr, context: nil).size.height
+            let subtitleAttr = [NSAttributedString.Key.font:UIFont(name: "HelveticaNeue", size: subTitleLabelFontSize)!]
+            let subtitleHeight = NSString(string: subTitileLabel!.text!).boundingRect(with: CGSize(width: textWidth,height: 999), options: .usesLineFragmentOrigin, attributes: subtitleAttr, context: nil).size.height
             
             var notificationHeight = (20 + paddingBetweenElements + titleHeight + (paddingBetweenElements / 2) + subtitleHeight + paddingBetweenElements)
             
@@ -187,7 +187,7 @@ public class EVWDropDownNotification: NSObject {
             
             
             if NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_7_1 && backgroundColor == nil {
-                let visualEffect = UIBlurEffect(style: .Light)
+                let visualEffect = UIBlurEffect(style: .light)
                 let blurView = UIVisualEffectView(effect: visualEffect)
                 blurView.frame = (notificationView?.bounds)!
                 notificationView?.addSubview(blurView)
@@ -228,7 +228,7 @@ public class EVWDropDownNotification: NSObject {
             }
             
             
-            topButton?.addTarget(self, action: #selector(self.topButtonTapped), forControlEvents: .TouchUpInside)
+            topButton?.addTarget(self, action: #selector(self.topButtonTapped), for: .touchUpInside)
             
             
             if topButtonText != nil {
@@ -239,7 +239,7 @@ public class EVWDropDownNotification: NSObject {
             
             bottomButton!.frame = CGRect(x: titleLabel!.frame.origin.x + titleLabel!.frame.size.width + paddingBetweenElements, y: topButton!.frame.origin.y + topButton!.frame.size.height + paddingBetweenElements, width: buttonWidth , height: buttonHeight)
             
-            bottomButton?.addTarget(self, action: #selector(self.bottomButtonTapped), forControlEvents: .TouchUpInside)
+            bottomButton?.addTarget(self, action: #selector(self.bottomButtonTapped), for: .touchUpInside)
             
             
             if bottomButtonText != nil {
@@ -261,7 +261,7 @@ public class EVWDropDownNotification: NSObject {
                 
                 let collision = UICollisionBehavior(items: [notificationView!])
                 collision.translatesReferenceBoundsIntoBoundary = false
-                collision.addBoundaryWithIdentifier("notificationEnd", fromPoint: CGPoint(x: 0,y: notificationHeight), toPoint: CGPoint(x: screenSize!.width, y: notificationHeight))
+                collision.addBoundary(withIdentifier: "notificationEnd" as NSCopying, from: CGPoint(x: 0,y: notificationHeight), to: CGPoint(x: screenSize!.width, y: notificationHeight))
                 animator?.addBehavior(collision)
                 
                 let elasticBehavior = UIDynamicItemBehavior(items: [notificationView!])
@@ -271,7 +271,7 @@ public class EVWDropDownNotification: NSObject {
                 
             }else{
                 
-                UIView.animateWithDuration(0.25, delay: 0, options: .CurveEaseOut, animations: {
+                UIView.animate(withDuration: 0.25, delay: 0, options: .curveEaseOut, animations: {
                     self.notificationView!.frame = CGRect(x: 0, y: 0, width:  self.screenSize!.width , height: notificationHeight)
                     }, completion: nil)
                 
@@ -313,29 +313,24 @@ public class EVWDropDownNotification: NSObject {
     
     @objc private func dismiss(){
         self.delegate?.dropdownNotificationDismissedWithTap()
-        self.dismissWithGravityAnimation(gravityAnimation!)
+        self.dismissWithGravityAnimation(animation: gravityAnimation!)
     }
     
     public func dismissWithGravityAnimation (animation:Bool) {
         
         if animation == true {
-            
             let gravity = UIGravityBehavior(items: [notificationView!])
             gravity.gravityDirection = CGVector(dx: 0, dy: -1.5)
             animator?.addBehavior(gravity)
             
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 self.animator?.removeAllBehaviors()
                 self.removeSubviews()
                 self.notificationView?.removeFromSuperview()
                 self.isBeingShown = false
-            })
-            
-            
+            }
         }else{
-            
-            UIView.animateWithDuration(0.25, delay: 0, options: .CurveEaseOut, animations: {
-                
+            UIView.animate(withDuration: 0.25, delay: 0, options: .curveEaseOut, animations: {
                 self.notificationView?.frame = CGRect(x: 0, y: self.notificationView!.frame.size.height , width: self.screenSize!.width, height: self.notificationView!.frame.size.height)
                 
                 }, completion: { (finished) in
@@ -344,10 +339,7 @@ public class EVWDropDownNotification: NSObject {
                     self.notificationView!.removeFromSuperview()
                     self.isBeingShown = false
             })
-            
-            
         }
-        
     }
     
     func removeSubviews(){

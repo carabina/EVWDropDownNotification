@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,61 +18,61 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMn-Km-ObO">
-                                <rect key="frame" x="20" y="125" width="560" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="0.14861918604651161" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="125" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14861918604651161" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Only Top Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onlyTop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UOf-Vw-JPV"/>
+                                    <action selector="onlyTopWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="B8B-6E-LfA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fau-I9-Mco">
-                                <rect key="frame" x="20" y="163" width="560" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="0.14861918599999999" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="163" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14861918599999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Only Bottom Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onlyBottom:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0S3-S0-Dvn"/>
+                                    <action selector="onlyBottomWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vec-VB-qGK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTC-aE-n9d">
-                                <rect key="frame" x="20" y="201" width="560" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="0.14861918599999999" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="201" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14861918599999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Both Buttons">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="bothButtons:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OxD-yf-xFu"/>
+                                    <action selector="bothButtonsWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HRb-9G-H8h"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wE-yJ-Wsa">
-                                <rect key="frame" x="20" y="239" width="560" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="0.14861918599999999" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="239" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14861918599999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Dismiss On Tap">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="dismissOnTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IPm-PN-Z67"/>
+                                    <action selector="dismissOnTapWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="euq-fe-htu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2Q-Nq-805">
-                                <rect key="frame" x="20" y="277" width="560" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="0.14861918599999999" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="277" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14861918599999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Vertical Alignment: Top">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="verticalTop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CVO-FT-NMb"/>
+                                    <action selector="verticalTopWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="57D-G7-Lc3"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.027450980390000001" green="0.23529411759999999" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.027450980390000001" green="0.23529411759999999" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="iMn-Km-ObO" secondAttribute="leading" id="20k-5D-JZ6"/>
                             <constraint firstItem="Fau-I9-Mco" firstAttribute="trailing" secondItem="iMn-Km-ObO" secondAttribute="trailing" id="6Wa-Or-IlK"/>
